@@ -1,0 +1,9 @@
+aniversario= 25
+contador=0
+while contador<=100:
+    multiplicando = aniversario * contador
+
+    contador+= 1
+    if multiplicando >1000:
+        print(f"o numero {multiplicando} e maior do que mil.")
+    print(multiplicando)

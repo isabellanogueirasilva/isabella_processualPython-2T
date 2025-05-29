@@ -1,0 +1,21 @@
+
+nomes = []
+caracteres = ["!","@","#","$","%","¨¨","¨&","*","(",")","-","=","_","+",",",".",",",".",";","/"]
+
+for miraculos  in range(1, 11):
+    nome = input("Insira um nome: ")
+    caracterespecial = False
+    for cara in nome:
+        if cara in caracteres:
+            caracterespecial = True
+            break
+    if caracterespecial == True:
+        print("O nome contém caracteres especiais!")
+        break
+    else:
+        nomes.append(nome)
+        numerocaracter = len(nome)
+        print(f"O nome {nome} possui {numerocaracter} letras!")
+        nomes.sort()
+        
+print(f"Os nomes foram: {nomes}")
